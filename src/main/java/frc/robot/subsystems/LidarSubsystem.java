@@ -11,7 +11,7 @@ import edu.wpi.first.wpilibj.SerialPort;
 import edu.wpi.first.wpilibj.smartdashboard.SmartDashboard;
 import edu.wpi.first.wpilibj2.command.SubsystemBase;
 
-public class Lidar extends SubsystemBase {
+public class LidarSubsystem extends SubsystemBase {
   public final static int BAUD = 115200;
   private SerialPort serial;
   volatile private int distance;
@@ -19,7 +19,7 @@ public class Lidar extends SubsystemBase {
   /**
    * Creates a new Lidar.
    */
-  public Lidar() {
+  public LidarSubsystem() {
     connect();
   }
 
